@@ -50,3 +50,41 @@ Después de configurar tu archivo app.py, ejecuta:
 ```bash
 python app.py
 ```
+
+
+### 2 crear una api que devuelva datos (JSON)
+
+# Mi Primer API con Flask
+
+Guía para crear tu primera API que devuelve respuestas JSON con Flask.
+
+## 🚀 Ejecutar el servidor
+
+1. Asegúrate de estar en el entorno virtual
+2. Ejecuta en la terminal:
+
+```bash
+python app.py
+```
+Probar la API
+
+Abre tu navegador y visita:
+"http://127.0.0.1:5000/producto"
+
+Deberías ver la siguiente respuesta JSON:
+json
+
+{
+  "nombre": "Camisa blanca",
+  "precio": 25000,
+  "stock": 15
+}
+
+¡Felicidades! Acabas de crear tu primera API.
+¿Qué aprendiste hoy?
+
+    Qué es JSON y por qué es importante
+
+    Cómo usar Flask para enviar respuestas en formato JSON
+
+    Cómo crear múltiples rutas en tu servidor (/ y /producto)
