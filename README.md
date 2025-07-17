@@ -88,3 +88,42 @@ json
     Cómo usar Flask para enviar respuestas en formato JSON
 
     Cómo crear múltiples rutas en tu servidor (/ y /producto)
+
+# Parte 3: Lista de productos y rutas dinámicas con Flask
+
+## Objetivos de aprendizaje
+
+- Mostrar todos los productos en la ruta `/productos`
+- Mostrar un producto específico usando rutas dinámicas como `/producto/2`
+
+## Ejecutar el servidor
+
+En la terminal, ejecuta:
+
+```bash
+python app2.py
+```
+🌐 Probar los endpoints
+Todos los productos:
+
+http://localhost:5000/productos
+Producto específico (ejemplo ID 2):
+
+http://localhost:5000/producto/2
+Producto inexistente (ejemplo ID 99):
+
+http://localhost:5000/producto/99
+
+Respuesta esperada para producto no encontrado:
+json
+
+{
+  "mensaje": "Producto no encontrado"
+}
+
+### Conceptos aprendidos
+
+- Uso de listas en memoria como base de datos temporal
+- Creación de rutas dinámicas con <int:producto_id>
+- Manejo de respuestas 404 Not Found en Flask
+- Estructuración de APIs RESTful básicas
